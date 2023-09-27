@@ -1,0 +1,46 @@
+public class PrimitiveDataTypeAssignment {
+
+    public static void main(String[] args) {
+        // Step 1: Declare and initialize primitive data types
+        int myInt = 42;
+        double myDouble = 3.14159;
+        float myFloat = 2.71828f;
+        char myChar = 'A';
+
+        // Step 2: Perform arithmetic operations
+        int resultInt = myInt + 10;
+        double resultDouble = myDouble * 2;
+        float resultFloat = myFloat / 2;
+
+        // Print the results
+        System.out.println("Step 2 Results:");
+        System.out.println("myInt + 10 = " + resultInt);
+        System.out.println("myDouble * 2 = " + resultDouble);
+        System.out.println("myFloat / 2 = " + resultFloat);
+
+        // Step 3: Type casting
+        int castedInt = (int) myDouble;
+        double castedDouble = (double) myFloat;
+
+        // Print the results
+        System.out.println("\nStep 3 Results:");
+        System.out.println("Casted int from myDouble: " + castedInt);
+        System.out.println("Casted double from myFloat: " + castedDouble);
+
+        // Step 4: Manipulate characters
+        myChar++;
+        System.out.println("\nStep 4 Result:");
+        System.out.println("After incrementing myChar: " + myChar);
+
+        // Step 5: Demonstrate limitations
+        byte myByte = 127; // Maximum value for byte
+        // Uncomment the following line to see an error
+        // byte exceededByte = 128;
+
+        // Print the results
+        System.out.println("\nStep 5 Result:");
+        System.out.println("Maximum byte value: " + myByte);
+        // Uncomment the following line to observe the error
+        // System.out.println("Exceeded byte value: " + exceededByte);
+    }
+}
