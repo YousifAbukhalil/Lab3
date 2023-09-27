@@ -1,1 +1,45 @@
+public class PrimitiveDataTypeAssignment {
 
+    public static void main(String[] args) {
+        // Step 1: Declare and initialize variables of each primitive data type
+        int myInt = 42;
+        double myDouble = 3.14;
+        float myFloat = 2.718f;
+        char myChar = 'A';
+        boolean myBoolean = true;
+        byte myByte = 127;
+        short myShort = 30000;
+        long myLong = 1234567890;
+
+        // Step 2: Perform arithmetic operations and print results
+        int resultInt = myInt + 5;
+        double resultDouble = myDouble * 2;
+        float resultFloat = myFloat / 2;
+        System.out.println("Result int: " + resultInt);
+        System.out.println("Result double: " + resultDouble);
+        System.out.println("Result float: " + resultFloat);
+
+        // Step 3: Type casting
+        int castedInt = (int) myDouble; // Explicit casting
+        double castedDouble = myFloat; // Implicit casting
+        System.out.println("Casted int from double: " + castedInt);
+        System.out.println("Casted double from float: " + castedDouble);
+
+        // Step 4: Manipulate characters
+        myChar++;
+        System.out.println("Incremented char: " + myChar);
+
+        // Step 5: Demonstrate limitations
+        // byte myByteOverflow = 128; // This line will produce an error
+        // short myShortOverflow = 32768; // This line will produce an error
+
+        // Step 6: Observations
+        // - Primitive data types are used to store simple values.
+        // - Arithmetic operations can be performed on numeric data types.
+        // - Type casting allows converting between different data types.
+        // - Characters can be treated as numbers and manipulated.
+        // - Each data type has its limitations in terms of value range.
+
+      
+    }
+}
